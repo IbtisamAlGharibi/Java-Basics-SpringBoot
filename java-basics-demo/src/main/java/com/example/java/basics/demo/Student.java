@@ -5,5 +5,9 @@ public class Student {
     private String studentName;
     private int grade;
 
-
+    public Student(String studentID, int grade, String studentName) {
+        this.studentID = studentID;
+        this.grade = grade;
+        this.studentName = studentName;
+    }
 }
