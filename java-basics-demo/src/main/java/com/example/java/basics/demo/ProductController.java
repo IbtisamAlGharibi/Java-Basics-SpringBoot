@@ -10,8 +10,19 @@ import java.util.HashMap;
 @RestController
 public class ProductController {
     static HashMap<Integer, Product> productHashMap = new HashMap<>();
-    Product product = new Product("1","Laptop",10);
+    Product product = new Product(1,"Laptop",10);
     public ProductController() {
         productHashMap.put(1, product);
     }
+
+    @PutMapping("/updateStock/{id}")
+    public String  updateStock(@PathVariable int id, @RequestParam int newStockQuantity){
+        if(productHashMap.containsKey(id)){
+            product.setStockQuantity(newStockQuantity);
+            return "ID: "+product.getId() +"Name: "  + product.getName() +"Quantity: "+  product.getStockQuantity();
+
+        }
+       return "Product not found";
+    }
+
 }
