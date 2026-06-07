@@ -34,4 +34,7 @@ public class Student {
     public void setGrade(int grade) {
         this.grade = grade;
     }
+
+    Student student = new Student("01",95, "Ibtisam");
+
 }
