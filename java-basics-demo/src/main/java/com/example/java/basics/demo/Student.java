@@ -37,4 +37,9 @@ public class Student {
 
     Student student = new Student("01",95, "Ibtisam");
 
+    public void displayInfo(){
+        System.out.println("Student ID: " + studentID);
+        System.out.println("Student Name: " + studentName);
+        System.out.println("Student Grade: " + grade);
+    }
 }
