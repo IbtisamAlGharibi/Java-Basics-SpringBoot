@@ -18,6 +18,7 @@ public class ProductController {
     @PutMapping("/updateStock/{id}")
     public String  updateStock(@PathVariable int id, @RequestParam int newStockQuantity){
         if(productHashMap.containsKey(id)){
+            Product product = productHashMap.get(id);
             product.setStockQuantity(newStockQuantity);
             return "ID: "+product.getId() +"Name: "  + product.getName() +"Quantity: "+  product.getStockQuantity();
 
