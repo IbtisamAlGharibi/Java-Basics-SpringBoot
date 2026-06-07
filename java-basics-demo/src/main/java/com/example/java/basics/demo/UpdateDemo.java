@@ -7,6 +7,15 @@ public class UpdateDemo {
         boolean status = false;
 
         System.out.println("Current student name: " + currentName);
+        if (!currentName.equalsIgnoreCase(newName)){
+            currentName = newName;
+            status=true;
+            System.out.println("Updated Successfully");
 
+        }else {
+           status = false;
+            System.out.println("Existing value already matches the new value");
+
+        }
     }
 }
