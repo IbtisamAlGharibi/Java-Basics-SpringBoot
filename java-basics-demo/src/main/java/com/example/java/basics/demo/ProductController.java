@@ -1,0 +1,10 @@
+package com.example.java.basics.demo;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.HashMap;
+
+@RestController
+public class ProductController {
+    HashMap<Integer, Product> productHashMap = new HashMap<>();
+}
