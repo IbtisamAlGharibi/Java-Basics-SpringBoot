@@ -2,7 +2,7 @@ package com.example.java.basics.demo;
 
 public class UpdateDemo {
     Student student = new Student(" 101","A", " Ahmed ");
-    public static void main(String[] args){
+   /* public static void main(String[] args){
         String currentName = "Ebtisam";
         String newName = "Ibtisam";
         boolean status = false;
@@ -20,7 +20,7 @@ public class UpdateDemo {
         }
 
         System.out.println("The student name: " + currentName + "Status: " + status);
-    }
+    }*/
 
      public void displayInfo(){
         System.out.println("Student ID: " + student.getStudentID());
