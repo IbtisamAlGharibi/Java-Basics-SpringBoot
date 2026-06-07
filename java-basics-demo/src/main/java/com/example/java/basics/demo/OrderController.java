@@ -17,7 +17,7 @@ public class OrderController {
     }
 
     @PutMapping("/updateOrder/{orderId}")
-    public String updateOrder(@PathVariable int orderId, @RequestParam String newAddress, String newStatus){
+    public String updateOrder(@PathVariable int orderId, @RequestParam String newAddress, @RequestParam String newStatus){
         if(orderHashMap.containsKey(orderId)){
           Order order = orderHashMap.get(orderId);
             order.setShippingAddress(newAddress);
