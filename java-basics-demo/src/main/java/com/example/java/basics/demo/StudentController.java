@@ -15,6 +15,11 @@ public class StudentController {
         System.out.println("Student ID: " + student.getStudentID());
         System.out.println("Student Name: " + student.getStudentName());
         System.out.println("Student Grade: " + student.getGrade());
+
+        System.out.println("Verification:");
+        System.out.println("Student ID remains: " + student.getStudentID());
+        System.out.println("Student Name updated to: " + student.getStudentName());
+        System.out.println("Student Grade updated to: " + student.getGrade());
     }
 
 }
