@@ -3,9 +3,9 @@ package com.example.java.basics.demo;
 public class Student {
     private String  studentID;
     private String studentName;
-    private int grade;
+    private String  grade;
 
-    public Student(String studentID, int grade, String studentName) {
+    public Student(String studentID, String grade, String studentName) {
         this.studentID = studentID;
         this.grade = grade;
         this.studentName = studentName;
@@ -27,19 +27,12 @@ public class Student {
         this.studentName = studentName;
     }
 
-    public int getGrade() {
+    public String  getGrade() {
         return grade;
     }
 
-    public void setGrade(int grade) {
+    public void setGrade(String  grade) {
         this.grade = grade;
     }
 
-    Student student = new Student("01",95, "Ibtisam");
-
-    public void displayInfo(){
-        System.out.println("Student ID: " + getStudentID());
-        System.out.println("Student Name: " + getStudentName());
-        System.out.println("Student Grade: " + getGrade());
-    }
 }
