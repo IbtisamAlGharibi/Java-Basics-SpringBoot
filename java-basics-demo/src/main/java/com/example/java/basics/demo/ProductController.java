@@ -20,7 +20,7 @@ public class ProductController {
         if(productHashMap.containsKey(id)){
             Product product = productHashMap.get(id);
             product.setStockQuantity(newStockQuantity);
-            return "ID: "+product.getId() +"Name: "  + product.getName() +"Quantity: "+  product.getStockQuantity();
+            return "ID: "+product.getId() +" Name: "  + product.getName() +" Quantity: "+  product.getStockQuantity();
 
         }
        return "Product not found";
