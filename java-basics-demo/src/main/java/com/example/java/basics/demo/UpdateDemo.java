@@ -1,6 +1,7 @@
 package com.example.java.basics.demo;
 
 public class UpdateDemo {
+    Student student = new Student(" 101","A", " Ahmed ");
     public static void main(String[] args){
         String currentName = "Ebtisam";
         String newName = "Ibtisam";
@@ -19,5 +20,24 @@ public class UpdateDemo {
         }
 
         System.out.println("The student name: " + currentName + "Status: " + status);
+    }
+
+     public void displayInfo(){
+        System.out.println("Student ID: " + student.getStudentID());
+        System.out.println("Student Name: " +student.getStudentName());
+        System.out.println("Student Grade: " + student.getGrade());
+
+        student.setStudentName("Ali");
+        student.setGrade("B");
+
+        System.out.println("Updated Student Details:");
+        System.out.println("Student ID: " + student.getStudentID());
+        System.out.println("Student Name: " + student.getStudentName());
+        System.out.println("Student Grade: " + student.getGrade());
+
+        System.out.println("Verification:");
+        System.out.println("Student ID remains: " + student.getStudentID());
+        System.out.println("Student Name updated to: " + student.getStudentName());
+        System.out.println("Student Grade updated to: " + student.getGrade());
     }
 }
