@@ -2,10 +2,10 @@ package com.example.java.basics.demo;
 
 public class UserProfile {
     private String userId;
-    private int phoneNumber;
+    private String  phoneNumber;
     private String address;
 
-    public UserProfile(String userId, int phoneNumber, String address) {
+    public UserProfile(String userId, String  phoneNumber, String address) {
         this.userId = userId;
         this.phoneNumber = phoneNumber;
         this.address = address;
@@ -19,11 +19,11 @@ public class UserProfile {
         this.userId = userId;
     }
 
-    public int getPhoneNumber() {
+    public String  getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String  phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
