@@ -1,5 +1,7 @@
 package com.example.java.basics.demo;
 
+import com.example.java.basics.demo.Entities.Student;
+
 public class UpdateDemo {
     Student student = new Student(" 101","A", " Ahmed ");
    /* public static void main(String[] args){

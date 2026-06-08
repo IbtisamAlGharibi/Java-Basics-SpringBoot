@@ -1,4 +1,4 @@
-package com.example.java.basics.demo;
+package com.example.java.basics.demo.Entities;
 
 public class Order {
     private int orderId;

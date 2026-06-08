@@ -1,4 +1,6 @@
-package com.example.java.basics.demo;
+package com.example.java.basics.demo.Controllers;
+
+import com.example.java.basics.demo.Entities.UserProfile;
 
 public class userProfileController {
     static UserProfile userProfile = new UserProfile("1001","0712345678", "Muscat, Oman");

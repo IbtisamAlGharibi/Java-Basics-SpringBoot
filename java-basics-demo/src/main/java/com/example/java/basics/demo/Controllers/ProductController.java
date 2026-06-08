@@ -1,5 +1,6 @@
-package com.example.java.basics.demo;
+package com.example.java.basics.demo.Controllers;
 
+import com.example.java.basics.demo.Entities.Product;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;

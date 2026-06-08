@@ -1,22 +1,22 @@
-package com.example.java.basics.demo;
+package com.example.java.basics.demo.Entities;
 
 public class Student {
-    private String  studentID;
+    private String  studentId;
     private String studentName;
     private String  grade;
 
-    public Student(String studentID, String grade, String studentName) {
-        this.studentID = studentID;
+    public Student(String studentId, String grade, String studentName) {
+        this.studentId = studentId;
         this.grade = grade;
         this.studentName = studentName;
     }
 
     public String getStudentID() {
-        return studentID;
+        return studentId;
     }
 
     public void setStudentID(String studentID) {
-        this.studentID = studentID;
+        this.studentId = studentID;
     }
 
     public String getStudentName() {
